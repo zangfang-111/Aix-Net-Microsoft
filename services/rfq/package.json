@@ -1,0 +1,22 @@
+{
+  "name": "@aix/rfq",
+  "version": "1.0.0",
+  "description": "Request For Quote Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "cristin <cristin.iosif@heron.ai>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-safe": "^6.0.0",
+    "moleculer": "^0.13.1",
+    "pino": "^4.17.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}

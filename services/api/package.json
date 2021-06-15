@@ -1,0 +1,18 @@
+{
+  "name": "@aix/api",
+  "version": "1.0.3",
+  "description": "api microservice",
+  "main": "api.service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alfonsodev <alfonso.fernandez@saltandpepper.co>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "jsonwebtoken": "^8.3.0",
+    "moleculer": "^0.13.4",
+    "moleculer-web": "^0.8.2",
+    "mongoose": "^5.3.13"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@aix/cli",
+  "description": "cli app to mock telegram",
+  "version": "0.0.0",
+  "author": "alfonso.fernandez@heron.ai",
+  "bin": {
+    "bot": "./bin/run"
+  },
+  "bugs": "http://heronai.atlassian.net",
+  "dependencies": {
+    "@oclif/command": "^1.5.6",
+    "@oclif/config": "^1.7.6",
+    "@oclif/plugin-help": "^2.1.2",
+    "cli-ux": "^4.9.3",
+    "imgcat": "^2.3.0",
+    "inquirer": "^6.2.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://bitbucket.org/heronai/aix-next/",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "bot"
+  },
+  "repository": "heronai/aix-next",
+  "scripts": {
+    "test": "echo NO TESTS"
+  }
+}

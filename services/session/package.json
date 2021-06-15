@@ -1,0 +1,29 @@
+{
+  "name": "@aix/session",
+  "version": "1.0.0",
+  "description": "session microservice",
+  "main": "session.service.js",
+  "scripts": {
+    "start": "node -r esm  index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "alfonsodev <alfonso.fernandez@saltandpepper.co>",
+  "license": "ISC",
+  "dependencies": {
+    "@aix/lib": "^1.0.0",
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "dotenv-safe": "^6.0.0",
+    "flat": "^4.1.0",
+    "moleculer": "^0.13.1",
+    "node-fetch": "^2.1.2",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "redis-mock": "^0.43.0"
+  }
+}

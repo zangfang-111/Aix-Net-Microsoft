@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      },
+      "exclude": ["transform-async-to-generator"]
+    }]
+  ],
+  "plugins": ["transform-object-rest-spread"],
+  "sourceMaps": true,
+  "retainLines": true
+}

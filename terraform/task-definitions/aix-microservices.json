@@ -1,0 +1,82 @@
+[{
+  "dnsSearchDomains": null,
+  "logConfiguration": {
+    "logDriver": "awslogs",
+    "options": {
+      "awslogs-group": "/ecs/aix-microservices",
+      "awslogs-region": "eu-central-1",
+      "awslogs-stream-prefix": "ecs"
+    }
+  },
+  "entryPoint": null,
+  "portMappings": [
+    {
+      "hostPort": 5000,
+      "protocol": "tcp",
+      "containerPort": 5000
+    }
+  ],
+  "command": [
+    "moleculer-runner -r services/chat/chat.service.js"
+  ],
+  "linuxParameters": null,
+  "cpu": 0,
+  "environment": [
+    {
+      "name": "CIRCUITBREAKER_ENABLED",
+      "value": "true"
+    },
+    {
+      "name": "LOGLEVEL",
+      "value": "info"
+    },
+    {
+      "name": "METRICS",
+      "value": "true"
+    },
+    {
+      "name": "NAMESPACE",
+      "value": "AIX"
+    },
+    {
+      "name": "REQUESTTIMEOUT",
+      "value": "5000"
+    },
+    {
+      "name": "STATISTICS",
+      "value": "true"
+    },
+    {
+      "name": "TRANSPORTER",
+      "value": "mqtt+ssl://b-ac333f62-9681-453d-85e6-1c7df5aa61b8-1.mq.eu-central-1.amazonaws.com:8883"
+    }
+  ],
+  "ulimits": null,
+  "dnsServers": null,
+  "mountPoints": [],
+  "workingDirectory": "/usr/scr/app",
+  "dockerSecurityOptions": null,
+  "memory": null,
+  "memoryReservation": 256,
+  "volumesFrom": [],
+  "image": "258544608464.dkr.ecr.eu-central-1.amazonaws.com/aix-next:latest",
+  "disableNetworking": null,
+  "healthCheck": {
+    "retries": 3,
+    "command": [
+      "node util/health_check.js chat"
+    ],
+    "timeout": 60,
+    "interval": 300,
+    "startPeriod": 1
+  },
+  "essential": true,
+  "links": null,
+  "hostname": null,
+  "extraHosts": null,
+  "user": null,
+  "readonlyRootFilesystem": null,
+  "dockerLabels": null,
+  "privileged": null,
+  "name": "chat"
+}]

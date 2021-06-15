@@ -1,0 +1,15 @@
+{
+  "name": "@aix/quote",
+  "version": "1.0.3",
+  "description": "quote microservice",
+  "main": "quote.service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alfonsodev <alfonso.fernandez@saltandpepper.co>",
+  "license": "ISC",
+  "dependencies": {
+    "moleculer": "^0.13.4",
+    "moleculer-web": "^0.8.2"
+  }
+}

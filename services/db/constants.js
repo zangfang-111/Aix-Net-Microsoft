@@ -1,0 +1,12 @@
+export const USER_TYPES = {
+  TRADER: 'TRADER',
+  MARKET_MAKER: 'MARKET_MAKER'
+}
+
+export const RFQ_ID_LIMIT = 5
+
+export const QUOTE_REQUEST_STATUSES = {
+  OPEN: 'OPEN',
+  CANCELLED: 'CANCELLED',
+  EXPIRED: 'EXPIRED'
+}

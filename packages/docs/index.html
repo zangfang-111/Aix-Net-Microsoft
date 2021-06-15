@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<body>
+  <div class="mermaid">
+sequenceDiagram
+    participant T as Telegram
+    participant AU as Auth
+    participant C as Chat
+    participant A as Ai
+    participant B as Broker
+    participant M as MOB
+    T->>AU: login
+    AU->>T: token
+    opt greeting
+    T->>C: Hello
+    C->>A: Hello
+    A->>C: how can I help you ?
+    C->>T: Hello
+    end
+    C->>A: 1 BTC
+    activate A
+    A->>B: price request
+    activate B
+    B->>M: price request
+    M->>B: price response
+    B->>A: prince response
+    deactivate B
+    A->>C: prince response
+    deactivate A
+  </div>
+  <script src="index.bundle.js" charset="utf-8"></script>
+</body>
+</html>

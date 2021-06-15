@@ -1,0 +1,16 @@
+data/
+redis-data/
+node_modules/
+.DS_Store
+.vscode/
+lerna-debug.log
+terraform/aix-deployment.pub
+.nyc_output/
+coverage/
+
+services/db/fixtures/development/financial-instruments.js
+services/db/fixtures/development/inter-document-map.js
+services/db/fixtures/development/traders.js
+services/db/fixtures/development/users.js
+services/price/lib/info-card/tmp/
+.idea

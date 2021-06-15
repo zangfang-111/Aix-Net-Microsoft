@@ -1,0 +1,29 @@
+{
+  "name": "@aix/web",
+  "version": "1.0.0",
+  "description": "Pubic website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "alfonsodev <alfonso.fernandez@saltandpepper.co>",
+  "license": "ISC",
+  "dependencies": {
+    "@aix/lib": "^1.0.0",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "express-es6-template-engine": "^2.0.4",
+    "moleculer": "^0.13.1",
+    "moleculer-web": "^0.8.0",
+    "node-fetch": "^2.1.2",
+    "telegraf": "^3.24.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}

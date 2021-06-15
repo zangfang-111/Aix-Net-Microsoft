@@ -1,0 +1,117 @@
+html
+  head
+    style(type='text/css').
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Poppins-Regular.otf'), url(#{poppinsUrl}) format('truetype');
+      }
+      @font-face {
+        font-family: 'Poppins Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Poppins-Bold.otf'), url(#{poppinsBoldUrl}) format('truetype');
+      }
+      @font-face {
+        font-family: 'Poppins SemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Poppins-SemiBold.otf'), url(#{poppinsSemiBoldUrl}) format('truetype');
+      }
+
+      .card-layout {
+        width : 790px;
+        height : 280px;
+        position: relative;
+        border:3px solid #B4CAE0;
+        background-color: #F6F9F9;
+        -webkit-border-top-left-radius: 12px;
+        -webkit-border-top-right-radius: 32px;
+        -moz-border-radius-topleft: 12px;
+        -moz-border-radius-topright: 32px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 32px;
+      }
+
+      .price {
+        font-family: 'Poppins SemiBold';
+        font-size : 75pt;
+        color: #004054;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .pair {
+        padding-left: 8px;
+        font-family: 'Poppins Bold';
+        font-size: 32pt;
+        color: #16A4FD;
+        position:absolute;
+        top:0;
+        left:0;
+      }
+
+      .volume {
+        padding-right: 8px;
+        font-family: 'Poppins';
+        font-size : 32pt;
+        color: #004054;
+        position:absolute;
+        top:0;
+        right:0;
+      }
+
+      .daily {
+        font-size : 24pt;
+        font-family: 'Poppins';
+        color: #004054;
+        width:100%; 
+        margin: auto;
+        padding-bottom: 4px;
+        text-align: center;
+        bottom: 0px;
+        position: absolute;
+      }
+
+      .dailyPrice {
+        font-size: 32pt;
+      }
+
+      .percentagePositive {
+        padding-left: 14px;
+        font-family: 'Poppins SemiBold';
+        color: #7ED321;
+      }
+      .percentageNeutral {
+        padding-left: 14px;
+        font-family: 'Poppins SemiBold';
+        color: #004054;
+      }
+      .percentageNegative {
+        padding-left: 14px;
+        font-family: 'Poppins SemiBold';
+        color: #D0021B;
+      }
+
+- var percentage = '+3,31%'
+- var volume = 'Vol: TBD'
+
+  body
+    div.card-layout
+      div.pair 
+        | #{coin}#{currency}
+        if (percentage[0] == '+' || percentage[0] == '[')
+          span.percentagePositive #{percentage}
+        else if (percentage[0] == '-')
+          span.percentageNegative #{percentage}
+        else
+          span.percentageNeutral #{percentage}
+      div.volume #{volume}
+      div.price $#{currentPrice}
+      div.daily
+        | Low 
+        span.dailyPrice #{currencySymbol}#{dayLowPrice} &#8226 #{currencySymbol}#{dayHighPrice} 
+        | High

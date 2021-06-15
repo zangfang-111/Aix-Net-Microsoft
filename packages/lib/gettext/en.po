@@ -1,0 +1,20 @@
+"Project-Id-Version: AiX 1.0\n"
+"Report-Msgid-Bugs-To: bugs@heron.ai\n"
+"Last-Translator: Heron Team team@heron.ai>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Greeting"
+msgstr "Hello %1$s, how can I help you?"
+msgstr "Hi %1$s, how can I help you?"
+msgstr "Welcome %1$s, what can I do for you?"
+
+msgid "DoNotUnderstand"
+msgstr "I don't understand"
+msgstr "What do you mean ?"
+msgstr "I don't get it"
+msgstr "I'm not sure what you mean"
+
+msgid "PresentPrice"
+msgstr "Here is the latest %2$s update.\n What size are you looking to trade?"

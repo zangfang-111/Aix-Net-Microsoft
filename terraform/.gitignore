@@ -1,0 +1,11 @@
+access.tf
+state/*.tfstate
+secrets/aix-deployment_pub.pem
+secrets/aix-deployment.pem
+secrets/aix-deployment.pub
+.terraform
+
+secrets/aix-deployment.pub
+secrets/aix-next-deployment.pem
+secrets/aix-next-deployment.pub
+secrets/aix-next-deployment_pub.pem

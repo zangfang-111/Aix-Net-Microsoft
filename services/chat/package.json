@@ -1,0 +1,37 @@
+{
+  "name": "@aix/chat",
+  "version": "1.0.0",
+  "description": "Handles communication with chat bots",
+  "main": "chat.service.js",
+  "scripts": {
+    "start": "node -r esm  index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "alfonsodev <alfonso.fernandez@saltandpepper.co>",
+  "license": "ISC",
+  "dependencies": {
+    "@aix/lib": "^1.0.0",
+    "aix-sherlock": "git+https://cristinai:dMJqQMKfKLhwDmZfsay6@bitbucket.org/heronai/aix-sherlock.git#staging",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "botmaster": "^3.2.0",
+    "botmaster-telegram": "^1.0.0",
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "delay": "^4.1.0",
+    "dotenv-safe": "^6.0.0",
+    "express": "^4.16.3",
+    "express-es6-template-engine": "^2.0.4",
+    "lodash": "^4.17.10",
+    "moleculer": "^0.13.1",
+    "node-fetch": "^2.1.2",
+    "pino": "^4.17.3",
+    "telegram-bot-api": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}

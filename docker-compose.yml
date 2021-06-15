@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+  aix-next:
+    build: .    
+    command: npm start
+    links:
+      - "mongo:127.0.0.1"
+      - "redis:127.0.0.1"
+    environment:
+      - TUNNEL_URL
+    ports:
+      - "5000:5000"
+  
+  redis:
+    image: redis
+    expose:
+      - 6379
+  
+  mongo:
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
